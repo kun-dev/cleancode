@@ -28,7 +28,7 @@ public class AngleOfClock {
     
     public static void main(String[] args) {
         AngleOfClock me = new AngleOfClock();
-        System.out.println(me.angle(12, 45));
+        System.out.println(me.angle(12, 05));
         System.out.println(me.angle(3, 30));
         System.out.println(me.angle(2, 23));        
     }
