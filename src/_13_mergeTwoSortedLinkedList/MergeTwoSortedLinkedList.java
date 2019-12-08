@@ -24,6 +24,7 @@ public class MergeTwoSortedLinkedList {
                 p.next = l2;
                 l2 = l2.next;
             }
+            p = p.next;
         }
         if (l1 != null) p.next = l1;
         if (l2 != null) p.next = l2;
