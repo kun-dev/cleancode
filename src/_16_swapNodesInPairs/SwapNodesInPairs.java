@@ -22,6 +22,7 @@ public class SwapNodesInPairs {
             q.next = p;
             p.next = r;
             prev = p;
+            p = r;
         }
         return dummy.next;
     }
