@@ -11,7 +11,10 @@ package _01_twosum;
  */
 public class Test {
     public static void main(String[] args) {
-        String s = "";
-        System.out.println(s.charAt(5));
+        String s = null;
+        if (s.isEmpty()) {
+            System.out.println("null is empty");
+        }
+        System.out.println(s);
     }
 }

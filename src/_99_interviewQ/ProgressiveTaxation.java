@@ -18,10 +18,8 @@ package _99_interviewQ;
  * @author I300939
  */
 public class ProgressiveTaxation {
-    int[] cap = new int[] {0, 10000, 30000, 100000};
-    double[] rate = new double[] {0, 0.1, 0.25, 0.4};
     int tax = 0;
-    public int tax(int income) {
+    public int tax(int income, int[] cap, double[] rate) {
         for (int i = cap.length - 1; i >= 0; i--) {
             if (income > cap[i]) {
                 tax = (int)((income - cap[i]) * rate[i]);
@@ -36,9 +34,11 @@ public class ProgressiveTaxation {
     
     public static void main(String[] args) {
         ProgressiveTaxation me = new ProgressiveTaxation();
-        System.out.println("150000 tax: " + me.tax(150000));
-        System.out.println("50000 tax: " + me.tax(50000));
-        System.out.println("25000 tax: " + me.tax(25000));
-        System.out.println("5000 tax: " + me.tax(5000));
+        int[] cap = new int[] {0, 10000, 30000, 100000};
+        double[] rate = new double[] {0, 0.1, 0.25, 0.4};
+        System.out.println("150000 tax: " + me.tax(150000, cap, rate));
+        System.out.println("50000 tax: " + me.tax(50000, cap, rate));
+        System.out.println("25000 tax: " + me.tax(25000, cap, rate));
+        System.out.println("5000 tax: " + me.tax(5000, cap, rate));
     }
 }
