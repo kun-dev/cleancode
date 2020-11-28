@@ -7,3 +7,5 @@ Even though you might think a problem is easy, writing code that is concise and
 clean is `not` as easy as most people think. For example, if you are writing
 more than 30 lines of code during a coding interview, your code is probably not
 concise enough. Most code in the eBook fall between 20-30 lines of code.
+
+Set up new ubuntu desktop.
